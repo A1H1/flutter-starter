@@ -1,0 +1,65 @@
+name: starter
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+
+  # GetX
+  get: 4.1.4
+  get_storage: ^2.0.2
+
+  # Network
+  dio: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/poppins_light.ttf
+          weight: 300
+        - asset: assets/fonts/poppins_light_italic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/poppins_regular.ttf
+          weight: 400
+        - asset: assets/fonts/poppins_italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/poppins_medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins_medium_italic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/poppins_semi_bold.ttf
+          weight: 600
+        - asset: assets/fonts/poppins_semi_bold_italic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/poppins_bold.ttf
+          weight: 700
+        - asset: assets/fonts/poppins_bold_italic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/poppins_extra_bold.ttf
+          weight: 800
+        - asset: assets/fonts/poppins_bold_italic.ttf
+          weight: 800
+          style: italic
