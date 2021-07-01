@@ -32,7 +32,7 @@ class CustomTextField extends StatelessWidget {
           errorText: wrapper.errorText.isEmpty ? null : wrapper.errorText,
           errorStyle: Styles.tsPrimaryColorRegular18,
           counterText: '',
-          fillColor: AppColors.primaryColor,
+          fillColor: AppColors.white,
           filled: true,
           hintText: hintText,
           enabled: isEnabled,

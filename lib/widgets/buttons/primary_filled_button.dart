@@ -17,7 +17,7 @@ class PrimaryFilledButton extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Text(
           text,
-          style: Styles.tsPrimaryColorRegular18,
+          style: Styles.tsWhiteRegular18,
         ),
       ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
