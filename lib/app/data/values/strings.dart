@@ -5,6 +5,7 @@ class Strings {
   static const empty = '';
   static const mobileNumber = 'Mobile Number';
   static const getOTP = 'Get OTP';
+  static const retry = 'Retry';
 }
 
 class ErrorMessages {

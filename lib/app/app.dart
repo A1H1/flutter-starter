@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:starter/app/app_controller.dart';
+import 'package:starter/app/app_binding.dart';
 import 'package:starter/app/data/values/constants.dart';
 import 'package:starter/app/data/values/env.dart';
 import 'package:starter/app/routes/app_pages.dart';
@@ -17,9 +17,7 @@ class App extends StatelessWidget {
       initialRoute: Routes.SPLASH,
       getPages: AppPages.pages,
       defaultTransition: Transition.fade,
-      onInit: () {
-        Get.put(AppController());
-      },
+      initialBinding: AppBinding(),
     );
   }
 }

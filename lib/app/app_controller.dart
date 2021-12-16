@@ -1,13 +1,10 @@
-import 'package:get/get.dart';
-import 'package:starter/app//data/repository/config_repository.dart';
+import 'package:starter/app/data/repository/config_repository.dart';
+import 'package:starter/base/base_controller.dart';
 
-class AppController extends GetxController {
-  ConfigRepository _configRepository = ConfigRepository();
-
+class AppController extends BaseController<ConfigRepository> {
   @override
   void onInit() {
     super.onInit();
-
-    _configRepository.saveAppConfig();
+    repository.saveAppConfig();
   }
 }

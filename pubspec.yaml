@@ -1,6 +1,6 @@
 name: starter
 description: A new Flutter project.
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -11,14 +11,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.0
+  cupertino_icons: ^1.0.4
 
   # GetX
-  get: 4.1.4
-  get_storage: ^2.0.2
+  get: ^4.6.1
+  get_storage: ^2.0.3
 
   # Network
-  dio: ^4.0.0
+  dio: ^4.0.4
+
+  # UI
+  shimmer: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -26,9 +29,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - assets/images/
 
   fonts:
     - family: poppins

@@ -6,3 +6,10 @@ class RepoResponse<T> {
 
   RepoResponse({this.error, this.data});
 }
+
+class DataWrapper<T> {
+  T? data;
+  String? error;
+
+  DataWrapper({this.error, this.data});
+}

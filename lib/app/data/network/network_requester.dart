@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dio/dio.dart';
 import 'package:starter/app/data/values/constants.dart';
 import 'package:starter/app/data/values/env.dart';
@@ -6,11 +8,9 @@ import 'package:starter/utils/helper/exception_handler.dart';
 class NetworkRequester {
   late Dio _dio;
 
-  NetworkRequester._privateConstructor() {
+  NetworkRequester() {
     prepareRequest();
   }
-
-  static final NetworkRequester shared = NetworkRequester._privateConstructor();
 
   void prepareRequest() {
     BaseOptions dioOptions = BaseOptions(
@@ -26,17 +26,18 @@ class NetworkRequester {
 
     _dio.interceptors.clear();
 
-    _dio.interceptors.addAll([
-      LogInterceptor(
-        error: true,
-        request: true,
-        requestBody: true,
-        requestHeader: true,
-        responseBody: true,
-        responseHeader: true,
-      )
-    ]);
+    _dio.interceptors.add(LogInterceptor(
+      error: true,
+      request: true,
+      requestBody: true,
+      requestHeader: true,
+      responseBody: true,
+      responseHeader: true,
+      logPrint: _printLog,
+    ));
   }
+
+  _printLog(Object object) => log(object.toString());
 
   Future<dynamic> get({
     required String path,
