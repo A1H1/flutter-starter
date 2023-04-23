@@ -17,9 +17,9 @@ class ExceptionHandler {
       switch (error.type) {
         case DioErrorType.sendTimeout:
           return APIException(message: ErrorMessages.noInternet);
-        case DioErrorType.connectTimeout:
+        case DioErrorType.connectionTimeout:
           return APIException(message: ErrorMessages.connectionTimeout);
-        case DioErrorType.response:
+        case DioErrorType.badResponse:
           return APIException(
               message: ErrorResponse.fromJson(error.response?.data).message);
         default:

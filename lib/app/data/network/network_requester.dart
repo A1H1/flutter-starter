@@ -14,8 +14,8 @@ class NetworkRequester {
 
   void prepareRequest() {
     BaseOptions dioOptions = BaseOptions(
-      connectTimeout: Timeouts.CONNECT_TIMEOUT,
-      receiveTimeout: Timeouts.RECEIVE_TIMEOUT,
+      connectTimeout: Duration(milliseconds: Timeouts.CONNECT_TIMEOUT),
+      receiveTimeout: Duration(milliseconds: Timeouts.RECEIVE_TIMEOUT),
       baseUrl: Env.baseURL,
       contentType: Headers.formUrlEncodedContentType,
       responseType: ResponseType.json,
