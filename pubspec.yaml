@@ -11,17 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.5
-
   # GetX
-  get: ^4.6.5
+  get: ^4.6.6
   get_storage: ^2.1.1
 
   # Network
-  dio: ^5.1.1
+  dio: ^5.3.3
 
   # UI
-  shimmer: ^2.0.0
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
